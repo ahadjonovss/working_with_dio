@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:provider/provider.dart';
 import 'package:working_with_dio/data/api_service/api_service.dart';
 import 'package:working_with_dio/data/repositories/category_repository.dart';
@@ -8,6 +9,8 @@ import 'package:working_with_dio/view_model/categories_view_model.dart';
 import 'package:working_with_dio/view_model/transfer_view_model.dart';
 
 void main() {
+  // WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  // FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   runApp( MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (context) => TransferViewModel(transferRepository: TransferRepository(simpleApiService: ApiService())),),

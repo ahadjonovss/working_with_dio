@@ -47,7 +47,7 @@ class TransfersPage extends StatelessWidget {
                 ),
               );
             }
-            return const Text("error");
+            return const Text("No data");
           },
         ),
       ),

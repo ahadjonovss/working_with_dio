@@ -38,11 +38,11 @@ class CategoriesPage extends StatelessWidget {
                         padding: const EdgeInsets.all(30),
                         child: TextField(
                           keyboardType: TextInputType.number,
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             border: OutlineInputBorder()
                           ),
                           onSubmitted: (value) {
-                            context.read<CategoriesViewModel>().changeInfo(int.parse(value)==0?int.parse(value)%6:int.parse(value)%6-1);
+                            context.read<CategoriesViewModel>().changeInfo(int.parse(value)%6);
                           },
 
                         ),
@@ -52,7 +52,7 @@ class CategoriesPage extends StatelessWidget {
                   ),
                 );
               }
-              return const Text("error");
+              return const Text("No data");
             },
           ),
         ),
