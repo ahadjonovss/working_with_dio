@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:working_with_dio/ui/home/first_task.dart';
+import 'package:provider/provider.dart';
+import 'package:working_with_dio/ui/home/transfer_page.dart';
 import 'package:working_with_dio/ui/home/second_task.dart';
+import 'package:working_with_dio/view_model/transfer_view_model.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -14,11 +16,16 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     List pages=[
-      FirstTask(),
+      TransfersPage(),
       SecondTask()
     ];
     return Scaffold(
       body: pages[currentPage],
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          context.read<TransferViewModel>().listenTransfers();
+        },
+      ),
       bottomNavigationBar: BottomNavigationBar(
         onTap: (v){
           setState(() {
