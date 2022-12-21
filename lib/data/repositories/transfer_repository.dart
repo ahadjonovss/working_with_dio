@@ -1,7 +1,7 @@
-import 'package:working_with_dio/data/api_service/simpleapi_service.dart';
+import 'package:working_with_dio/data/api_service/api_service.dart';
 
 class TransferRepository{
-  SimpleApiService simpleApiService;
+  ApiService simpleApiService;
   TransferRepository({required this.simpleApiService});
 
   getTransfers()=> simpleApiService.getTransfers();
