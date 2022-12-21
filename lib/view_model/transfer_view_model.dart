@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:working_with_dio/data/models/first_model/transfer_model.dart';
+import 'package:working_with_dio/data/api_service/api_service.dart';
 import 'package:working_with_dio/data/repositories/transfer_repository.dart';
 
 class TransferViewModel extends ChangeNotifier{
@@ -9,9 +9,15 @@ class TransferViewModel extends ChangeNotifier{
 
   List? transferModels;
   int currentInfo=0;
+  String errorForUI = "";
 
   listenTransfers() async {
-    transferModels = await transferRepository.getTransfers();
+    MyResponse myResponse= await transferRepository.getTransfers();
+    if (myResponse.error!.isEmpty) {
+      transferModels = myResponse.data;
+    } else {
+      errorForUI = myResponse.error!;
+    }
     notifyListeners();
   }
 
