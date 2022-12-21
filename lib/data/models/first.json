@@ -1,0 +1,103 @@
+[
+
+  {
+    "transfer_date": "2022-08-10",
+    "data": [
+      {
+        "transaction_code": 45656562,
+        "date": "2022-08-10 12:19:33.933384",
+        "expense_id": 1,
+        "amount": 1200.0,
+        "card_id": 3,
+        "receiver": {
+          "brand_image": "https://seeklogo.com/images/M/mcdonald-s-logo-2325D6C1EF-seeklogo.com.png",
+          "name": "McDonalds",
+          "location": "Yunusobod 4 kv "
+        }
+      },
+      {
+        "transaction_code": 54456464,
+        "date": "2022-08-10 15:18:33.933384",
+        "expense_id": 1,
+        "amount": 224000.0,
+        "card_id": 3,
+        "receiver": {
+          "brand_image": "https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/f8/45/07/f8450750-fbba-ebad-6716-c623b217396d/AppIcon-0-1x_U007emarketing-0-0-85-220-0-8.png/246x0w.png",
+          "name": "Korzinka",
+          "location": "Chilonzor 17"
+        }
+      }
+    ]
+  },
+  {
+    "transfer_date": "2022-04-12",
+    "data": [
+      {
+        "transaction_code": 34656562,
+        "date": "2022-04-12 08:25:33.933384",
+        "expense_id": 6,
+        "amount": 1200.0,
+        "card_id": 3,
+        "receiver": {
+          "brand_image": "https://darakchi.uz/storage/e7/52/ce/133795/conversions/photo_2020-11-10_21-10-22-xl-xl.jpg",
+          "name": "Atto",
+          "location": "Mirtemir 4 kv "
+        }
+      },
+      {
+        "transaction_code": 34656563,
+        "date": "2022-04-12 18:25:33.933384",
+        "expense_id": 8,
+        "amount": 1200.0,
+        "card_id": 3,
+        "receiver": {
+          "brand_image": "https://miro.medium.com/max/2400/2*Wiq07P6F7Csjz1RquyAFXg.png",
+          "name": "Yandex Taxi",
+          "location": "Mega Planet"
+        }
+      }
+    ]
+  },
+  {
+    "transfer_date": "2022-09-01",
+    "data": [
+      {
+        "transaction_code": 15456113864,
+        "date": "2022-09-01 05:30:33.933384",
+        "expense_id": 6,
+        "amount": 25000.0,
+        "card_id": 3,
+        "receiver": {
+          "brand_image": "https://static10.tgstat.ru/channels/_0/0a/0a7ae3149566d2bea2923b9da48de874.jpg",
+          "name": "Hamkor Bank",
+          "location": "Mirzo Ulug'bek"
+        }
+      },
+      {
+        "transaction_code": 13554477,
+        "date": "2022-09-01 20:44:33.933384",
+        "expense_id": 1,
+        "amount": 1200.0,
+        "card_id": 3,
+        "receiver": {
+          "brand_image": "https://dostavkainfo.uz/wp-content/uploads/2020/03/evos.png",
+          "name": "Fast Food",
+          "location": "Evos"
+        }
+      },
+      {
+        "transaction_code": 23435454,
+        "date": "2022-09-01 18:44:33.933384",
+        "expense_id": 5,
+        "amount": 340000.0,
+        "card_id": 5,
+        "receiver": {
+          "brand_image": "https://assets.bossjob.com/companies/20235/logo/RrhdnVZtccYdb0PrQPBq0beA06Fmqo75xYd2WeHO.jpeg",
+          "name": "Smart Watch",
+          "location": "Malika bozor 23B"
+        }
+      }
+    ]
+  }
+
+]
